@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>お問い合わせ｜ミオンミュージック</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<link rel="shortcut icon" href="common/img/favicon.png" type="images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="common/css/import.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/form.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/smart-crossfade.js"></script>
+<script type="text/javascript" src="common/js/jquery.js"></script>
+<script type="text/javascript" src="common/js/swingcircle.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/validate.js"></script>
+<script  type="text/javascript">
+$(document).ready(function() {
+$("#menu_rate").mouseenter(function() {
+		$(".sp_menu_rate").show('slow');
+}).mouseleave(function() {
+
+$(".sp_menu_rate").hide('slow');
+});
+$(function() {
+var fNavi = $('.ftNavWrap');
+fNavi.hide();
+$(window).scroll(function () {
+if ($(this).scrollTop() > 200) {
+fNavi.fadeIn();
+} else {
+fNavi.fadeOut();
+}
+});
+});
+});
+</script>
+</head>
+<body>
+<a name="top" id="top"></a>
+<header>
+<div class="logoImg">
+<a href="http://www.mionmusic.com/"><img src="common/img/header_logo.gif" alt="mion music school" width="269"/></a>
+</div>
+</header>
+<!--/ id mainImgWrap-->
+<nav>
+<div class="gNav clearfix">
+<ul class="gNavIn clearfix">
+<li id="nav01"><a href="http://www.mionmusic.com/reason"><img src="common/img/gnav01_off.gif" alt="ミオンが選ばれる7つの理由"/></a></li>
+<li><a href="http://www.mionmusic.com/teacher"><img src="common/img/gnav02_off.gif" alt="講師のご紹介"/></a></li>
+<li><a href="http://www.mionmusic.com/service"><img src="common/img/gnav03_off.gif" alt="料金・サービス"/></a></li>
+<li><a href="http://www.mionmusic.com/access"><img src="common/img/gnav04_off.gif" alt="アクセス・会社概要"/></a></li>
+<li id="menu_rate"><a href="http://www.mionmusic.com/#" ><img src="common/img/gnav05_off.gif" alt=""/></a>
+<ul class="sp_menu_rate clearfix">
+<li><a href="http://www.mionmusic.com/guitar"><img src="common/img/sub_menu01.gif" alt="ギターレッスン"></a></li>
+<li><a href="http://www.mionmusic.com/piano"><img src="common/img/sub_menu02.gif" alt="ピアノレッスン"></a></li>
+<li><a href="http://www.mionmusic.com/vocal"><img src="common/img/sub_menu03.gif" alt="ボーカルレッスン"></a></li>
+</ul>
+</li>
+<li><a href="http://www.mionmusic.com/voice"><img src="common/img/gnav06_off.gif" alt="生徒さんの声"/></a></li>
+<li><a href="http://www.mionmusic.com/faq"><img src="common/img/gnav07_off.gif" alt="よくあるご質問"/></a></li>
+</ul>
+</div>
+</nav>
+<div id="contentsWrap">
+<div id="contents" > 
+<div class="contentsInner clearfix">
+ <div id="breadcumb">
+<span><a href="http://www.mionmusic.com">HOME</a> &gt;</span> <span class="bold">お問い合わせ</span>
+ </div>
+	<article id="content" class="thanks">
+		<div id="main_visual">
+			<h1>体験レッスンお申し込み</h1>
+			<img src="img/contact/contact_heading.png" alt="体験レッスンお申し込み">
+		</div>
+		<div>
+			<h4 class="contact_ttl_underline pt80">お申し込みが完了いたしました。</h2>
+	<p class="fts20 alc" style="padding:28px 0px 180px 0px;">
+	
+	この度は体験レッスンにお申し込みいただき、<br/>
+誠にありがとうございます。<br/>
+折り返し担当者より連絡をさせていただきます。<br/>
+もし、一両日中に返事がない場合は、お手数ですが<br/>
+<a href="http://mionmusic.com" style="text-decoration: underline">mionmusic.com</a>までお問い合わせください。
+	
+	</p>			
+				
+				
+			<div style="margin-bottom:80px;">	<center><a href="http://www.mionmusic.com" ><img src="img/contact/btn_thanks_off.jpg" alt=""/></a></center></div>
+		</div>
+		
+	</article>
+	</div>
+	</div>
+	</div>
+	<footer>
+<div id="footerWrap">
+<div class="copyrightWrap" style="padding: 25px 0px 25px 0px;">
+<a href="http://www.mionmusic.com/privancy">プライバシーポリシー</a>
+<p class="copyright">Copyright(C)mion music All Rights Reserved.</p>
+</div>
+</div>
+</div>
+<!--/ id contentsWrap-->
+<!--/ id footerWrap-->
+</footer>
+	</div>
+</div>
+</body>
+</html>

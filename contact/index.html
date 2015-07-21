@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>お問い合わせ｜ミオンミュージック</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<link rel="shortcut icon" href="http://www.mionmusic.com/common/img/favicon.png" type="images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="common/css/import.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/form.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="common/js/smart-crossfade.js"></script>
+<script type="text/javascript" src="common/js/jquery.js"></script>
+<script type="text/javascript" src="common/js/swingcircle.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/validate.js"></script>
+<script  type="text/javascript">
+$(document).ready(function() {
+$("#menu_rate").mouseenter(function() {
+		$(".sp_menu_rate").show('slow');
+}).mouseleave(function() {
+
+$(".sp_menu_rate").hide('slow');
+});
+$(function() {
+var fNavi = $('.ftNavWrap');
+fNavi.hide();
+$(window).scroll(function () {
+if ($(this).scrollTop() > 200) {
+fNavi.fadeIn();
+} else {
+fNavi.fadeOut();
+}
+});
+});
+
+});
+</script>
+<script type="text/javascript">
+	$(function(){
+		$(window).load(function(){
+			$('textarea').each(function(){
+				var thisTitle = $(this).attr('title');
+				if(!(thisTitle === '')){
+					$(this).wrapAll('<span style="text-align:left;display:inline-block;position:relative;"></span>');
+					$(this).parent('span').append('<span class="placeholder">' + thisTitle + '</span>');
+					$('.placeholder').css({
+						top:'4px',
+						left:'5px',
+						fontSize:'0.9em',
+						lineHeight:'170%',
+						textAlign:'left',
+						color:'#bebebe',
+						overflow:'hidden',
+						position:'absolute',
+						zIndex:'99'
+					}).click(function(){
+						$(this).prev().focus();
+					});
+
+					$(this).focus(function(){
+						$(this).next('span').css({display:'none'});
+					});
+
+					$(this).blur(function(){
+						var thisVal = $(this).val();
+						if(thisVal === ''){
+							$(this).next('span').css({display:'inline-block'});
+						} else {
+							$(this).next('span').css({display:'none'});
+						}
+					});
+
+					var thisVal = $(this).val();
+					if(thisVal === ''){
+						$(this).next('span').css({display:'inline-block'});
+					} else {
+						$(this).next('span').css({display:'none'});
+					}
+				}
+			});
+});
+});
+</script>
+</head>
+<body>
+<a name="top" id="top"></a>
+<header>
+<div class="logoImg">
+<a href="http://www.mionmusic.com/"><img src="common/img/header_logo.gif" alt="mion music school" width="269"/></a>
+</div>
+</header>
+<!--/ id mainImgWrap-->
+<nav>
+<div class="gNav clearfix">
+<ul class="gNavIn clearfix">
+<li id="nav01"><a href="http://www.mionmusic.com/reason"><img src="common/img/gnav01_off.gif" alt="ミオンが選ばれる7つの理由"/></a></li>
+<li><a href="http://www.mionmusic.com/teacher"><img src="common/img/gnav02_off.gif" alt="講師のご紹介"/></a></li>
+<li><a href="http://www.mionmusic.com/service"><img src="common/img/gnav03_off.gif" alt="料金・サービス"/></a></li>
+<li><a href="http://www.mionmusic.com/access"><img src="common/img/gnav04_off.gif" alt="アクセス・会社概要"/></a></li>
+<li id="menu_rate"><a href="http://www.mionmusic.com/#" ><img src="common/img/gnav05_off.gif" alt=""/></a>
+<ul class="sp_menu_rate clearfix">
+<li><a href="http://www.mionmusic.com/guitar"><img src="common/img/sub_menu01.gif" alt="ギターレッスン"></a></li>
+<li><a href="http://www.mionmusic.com/piano"><img src="common/img/sub_menu02.gif" alt="ピアノレッスン"></a></li>
+<li><a href="http://www.mionmusic.com/vocal"><img src="common/img/sub_menu03.gif" alt="ボーカルレッスン"></a></li>
+</ul>
+</li>
+<li><a href="http://www.mionmusic.com/voice"><img src="common/img/gnav06_off.gif" alt="生徒さんの声"/></a></li>
+<li><a href="http://www.mionmusic.com/faq"><img src="common/img/gnav07_off.gif" alt="よくあるご質問"/></a></li>
+</ul>
+</div>
+</nav>
+<div id="contentsWrap">
+<div id="contents" > 
+<div class="contentsInner clearfix">
+ <div id="breadcumb">
+<span><a href="http://www.mionmusic.com/">HOME</a> &gt;</span> <span class="bold">お問い合わせ</span>
+ </div>
+<div class="contact">
+<img src="img/contact/contact_bnr.jpg" alt="体験レッスン お申し込み"/>
+<p class="contact_bnrtxt">
+ご入力いただいた情報はご予約の確認以外には使用しません。<br/>
+また、体験レッスン時の無理な勧誘もいたしません。
+<br/>
+<span>以下のフォームに必要事項をご記入のうえ、「確認画面へ」をクリックしてください。</span>
+</p>
+
+<form method="post" action="mail.php">
+<h4 class="contact_ttl_underline">お客様情報登録</h4>
+<div class="contact_In">
+					<div class="field">
+						<p class="fsM2"><span class="required">必須</span>お名前<span><em id="name_icon"></em></span></p>
+						<input size="20" type="text" name="名前" class="field_text" id="user_name01"/>
+						<div id="name_err" class=""></div>	
+					</div>
+					<div class="field">
+						<p class="fsM2"><span class="required">必須</span>E-MAIL<span><em id="email_icon"></em></span></p>
+						<input size="20" type="email" name="E-MAIL" class="field_text" id="email"/>
+						<div id="email_err" class=""></div>	
+					</div>
+					<div class="field">
+						<p class="fsM2"><span class="required">必須</span>お電話番号<span><em id="tel_icon"></em></span></p>
+						<input size="20" type="text" name="お電話番号" class="field_text" id="tel"/>
+						<div id="tel_err" class=""></div>
+					</div>
+					
+						</div>
+					
+				<h4 class="contact_ttl_underline pt30">体験レッスンについて</h4>
+					<div class="contact_In">
+					<div class="field">
+						<p class="fsM2"><span class="required">必須</span>ご希望の体験レッスン<span><em id="lesson_icon"></em></span></p>
+						<p class="fsM2">興味のある項目が複数ある場合は、ご意見・ご質問欄にその他の内容を入力してください。</p> 
+						<select name="ご希望の体験レッスン" class="field_select" id="lesson">
+							<option value="選択してください">選択してください</option>
+							<option value="クラシックギター">クラシックギター</option>
+							<option value="アコースティクギター">アコースティクギター</option>
+							<option value="エレキギター">エレキギター</option>
+							<option value="エレキベース">エレキベース</option>
+							<option value="ウクレレ">ウクレレ</option>
+				   <!--  <option value="ボーカル">ボーカル</option>
+				     <option value="ボサノバ">ボサノバ</option>
+				     <option value="ボサノバ">ボサノバ</option>-->
+				     <option value="作曲、編曲">作曲、編曲</option>
+				     <option value="エレキドラム（東中野教室のみ）">エレキドラム（東中野教室のみ）</option>
+				     <option value="ピアノ（東中野教室のみ）">ピアノ（東中野教室のみ）</option>
+				     <option value="ボーカル（下北沢教室のみ）">ボーカル（下北沢教室のみ）</option>
+				     <option value="未定（相談したい）">未定（相談したい）</option>
+				 </select>
+				 <div id="lesson_err" class=""></div>
+				</div>
+				<div class="field">
+					<p class="fsM2"><span class="required">必須</span>体験レッスンをする楽器の経験年数<span><em id="month_icon"></em></span></p>
+					<select name="経験年数" class="field_select" id="month1">
+						<option value="選択してください">選択してください</option>
+						<option value="未経験">未経験</option>
+						<option value="1年未満">1年未満</option>
+						<option value="1〜3年">1〜3年</option>
+						<option value="3年以上">3年以上</option>
+					</select>
+					<div id="month_err" class=""></div>
+				</div>
+				<div class="field">
+					<p class="fsM2"><span class="required">必須</span>ご希望の教室<span><em id="contact_icon3"></em></span></p>
+					<div id="radio1" class="field_checkbox field_room"><input name="教室" type="radio" id="course1" value="東中野教室" /><label for="course1"><span>東中野教室</span></label></div>
+					<div id="radio2" class="field_checkbox field_room"><input name="教室" type="radio" id="course2" value="下北沢教室" /><label for="course2"><span>下北沢教室</span></label></div>
+					<div id="contact_err" class=""></div>
+				</div>
+				<div class="field">
+					<p class="fsM2"><span class="required">必須</span>ご連絡方法<span><em id="contact_icon2"></em></span></p>
+					<div class="field_checkbox field_room" onclick="check1Toggle();" ><input name="第一希望ご連絡方法" type="checkbox" id="otoi1" value="メール" onclick="check1Toggle();"/><label for="otoi1"><span>メール</span></label></div>
+					<div class="field_checkbox field_room" onclick="check2Toggle();"><input name="第二希望ご連絡方法" type="checkbox" id="otoi2" value="お電話" onclick="check2Toggle();"/><label for="otoi2"><span>お電話</span></label></div>
+					<div id="contact_err2" class=""></div>
+				</div>
+				<div class="field">
+					<p class="fsM2">レッスン日第一希望</p>
+					<select name="第一希望月" class="field_select field_month">
+						<option value="">選択してください</option>
+						<option value="1月">1月</option>
+						<option value="2月">2月</option>
+						<option value="3月">3月</option>
+						<option value="4月">4月</option>
+						<option value="5月">5月</option>
+						<option value="6月">6月</option>
+						<option value="7月">7月</option>
+						<option value="8月">8月</option>
+						<option value="9月">9月</option>
+						<option value="10月">10月</option>
+						<option value="12月">11月</option>
+						<option value="12月">12月</option>
+					</select>
+					<select name="第一希望日" class="field_select field_day">
+						<option value="">選択してください</option>
+						<option value="1日">1日</option>
+						<option value="2日">2日</option>
+						<option value="3日">3日</option>
+						<option value="4日">4日</option>
+						<option value="5日">5日</option>
+						<option value="6日">6日</option>
+						<option value="7日">7日</option>
+						<option value="8日">8日</option>
+						<option value="9日">9日</option>
+						<option value="10日">10日</option>
+						<option value="11日">11日</option>
+						<option value="12日">12日</option>
+						<option value="13日">13日</option>
+						<option value="14日">14日</option>
+						<option value="15日">15日</option>
+						<option value="16日">16日</option>
+						<option value="17日">17日</option>
+						<option value="18日">18日</option>
+						<option value="19日">19日</option>
+						<option value="20日">20日</option>
+						<option value="21日">21日</option>
+						<option value="22日">22日</option>
+						<option value="23日">23日</option>
+						<option value="24日">24日</option>
+						<option value="25日">25日</option>
+						<option value="26日">26日</option>
+						<option value="27日">27日</option>
+						<option value="28日">28日</option>
+						<option value="29日">29日</option>
+						<option value="30日">30日</option>
+						<option value="31日">31日</option>
+					</select>
+					<select name="第一希望時間帯" class="field_select field_hour">
+						<option value="">選択してください</option>
+						<option value="10:00〜11:00">10:00〜11:00</option>
+						<option value="11:00〜12:00">11:00〜12:00</option>
+						<option value="12:00〜13:00">12:00〜13:00</option>
+						<option value="13:00〜14:00">13:00〜14:00</option>
+						<option value="14:00〜15:00">14:00〜15:00</option>
+						<option value="15:00〜16:00">15:00〜16:00</option>
+						<option value="16:00〜17:00">16:00〜17:00</option>
+						<option value="17:00〜18:00">17:00〜18:00</option>
+						<option value="18:00〜19:00">18:00〜19:00</option>
+						<option value="19:00〜20:00">19:00〜20:00</option>
+						<option value="20:00〜21:00">20:00〜21:00</option>
+					</select>
+				</div>
+				<div class="field">
+					<p class="fsM2">レッスン日第二希望</p>
+					<select name="レッスン日第二希望月" class="field_select field_month">
+						<option value="">選択してください</option>
+						<option value="1月">1月</option>
+						<option value="2月">2月</option>
+						<option value="3月">3月</option>
+						<option value="4月">4月</option>
+						<option value="5月">5月</option>
+						<option value="6月">6月</option>
+						<option value="7月">7月</option>
+						<option value="8月">8月</option>
+						<option value="9月">9月</option>
+						<option value="10月">10月</option>
+						<option value="12月">11月</option>
+						<option value="12月">12月</option>
+					</select>
+					<select name="レッスン日第二希望日" class="field_select field_day">
+						<option value="">選択してください</option>
+						<option value="1日">1日</option>
+						<option value="2日">2日</option>
+						<option value="3日">3日</option>
+						<option value="4日">4日</option>
+						<option value="5日">5日</option>
+						<option value="6日">6日</option>
+						<option value="7日">7日</option>
+						<option value="8日">8日</option>
+						<option value="9日">9日</option>
+						<option value="10日">10日</option>
+						<option value="11日">11日</option>
+						<option value="12日">12日</option>
+						<option value="13日">13日</option>
+						<option value="14日">14日</option>
+						<option value="15日">15日</option>
+						<option value="16日">16日</option>
+						<option value="17日">17日</option>
+						<option value="18日">18日</option>
+						<option value="19日">19日</option>
+						<option value="20日">20日</option>
+						<option value="21日">21日</option>
+						<option value="22日">22日</option>
+						<option value="23日">23日</option>
+						<option value="24日">24日</option>
+						<option value="25日">25日</option>
+						<option value="26日">26日</option>
+						<option value="27日">27日</option>
+						<option value="28日">28日</option>
+						<option value="29日">29日</option>
+						<option value="30日">30日</option>
+						<option value="31日">31日</option>
+					</select>
+					<select name="レッスン日第二希望時間帯" class="field_select field_hour">
+						<option value="">選択してください</option>
+						<option value="10:00〜11:00">10:00〜11:00</option>
+						<option value="11:00〜12:00">11:00〜12:00</option>
+						<option value="12:00〜13:00">12:00〜13:00</option>
+						<option value="13:00〜14:00">13:00〜14:00</option>
+						<option value="14:00〜15:00">14:00〜15:00</option>
+						<option value="15:00〜16:00">15:00〜16:00</option>
+						<option value="16:00〜17:00">16:00〜17:00</option>
+						<option value="17:00〜18:00">17:00〜18:00</option>
+						<option value="18:00〜19:00">18:00〜19:00</option>
+						<option value="19:00〜20:00">19:00〜20:00</option>
+						<option value="20:00〜21:00">20:00〜21:00</option>
+					</select>
+				</div>
+				</div>
+				
+				<h4 class="contact_ttl_underline pt30">その他</h4>
+				<div class="contact_In">
+				<div class="field">
+					<p class="fsM2">ご意見・ご質問</p>
+					<textarea name="ご意見・ご質問" cols="60" rows="5" title="例）ギター以外に、ボーカルにも興味があります。"></textarea></td>
+				</div>
+				<div id="bottom">
+
+
+					<input type="submit" disabled value="確認画面へ" class="btn_contact2 fsP1 submitalertoff" />
+				</div>
+			</div>
+			</form>
+
+
+
+</div>
+</div>
+</div>
+<!--/ id contents-->
+<footer>
+<div id="footerWrap">
+<div class="copyrightWrap" style="padding: 25px 0px 25px 0px;">
+<a href="http://www.mionmusic.com/privancy">プライバシーポリシー</a>
+<p class="copyright">Copyright(C)mion music All Rights Reserved.</p>
+</div>
+</div>
+</div>
+<!--/ id contentsWrap-->
+<!--/ id footerWrap-->
+</footer>
+</body>
+</html>

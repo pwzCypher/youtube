@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+.contact
+{
+text-align:center;
+font-size:20px;
+}
+.contact_bnrtxt
+{
+padding:15px 0px 60px 0px;
+}
+.contact_bnrtxt span
+{
+padding:80px 0px 0px 0px;
+display:block;
+}
+
+.contact_In
+{
+width:700px;
+margin:0 auto;
+}
+
+.inner {
+	text-align: left;
+}
+#sub_lesson {
+	width: auto;
+	padding: 0 3.9% 10px;
+	margin: 0 auto 20px;
+	background-color: #ffe21f;	
+}
+.banner_link {
+	width: auto;
+	text-align: left;
+	margin: 0 auto 15px;
+	padding: 14px 2.1%;;
+}
+.required {
+	color: #fff;
+	background: #c21010;
+	padding: 3px 5px;
+	line-height: 1;
+	margin-right: 3px;
+}
+.field {
+	height: auto;
+  clear: both;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-top: 30px;
+}
+.field p {
+	margin: 0 0 5px;
+}
+input.field_text {
+	height:58px;
+	border-radius: 5px;
+	border: none;
+	width: 690px;
+	font-size: 92%;
+	padding-left: 10px;
+}
+textarea {
+	height:170px;
+	border-radius: 5px;
+	border: none;
+	width: 700px;
+	font-size: 92%;
+}
+.field_select {
+	width:700px;
+	margin:0 auto;
+	background: url(../img/contact/contact_select.png) no-repeat;
+	  -webkit-appearance: none;
+	  height:42px;
+	  outline:0;
+	  padding-left: 10px;
+	  border:0;
+}
+.field_room {
+	float: left;
+  margin-right: 5px;
+	width: 345px;
+}
+.field_checkbox span {
+	background:url(../img/contact/contact_check.png) no-repeat;
+	margin-bottom: 10px;
+	/* width:345px; */
+	  -webkit-appearance: none;
+	  height:44px;
+	  outline:0;
+	  border:0;
+	  display:block;
+	padding-left: 48px;
+	padding-top: 8px;
+	font-size: 20px;
+}
+
+.field_checkbox  input:checked + label  span { 
+background: url(../img/contact/contact_check_on.png) no-repeat;
+}
+
+
+.field_checkbox input
+{
+  -webkit-appearance: none;
+  display:none;
+}
+.field_month
+{
+     width:170px;
+	margin:0 auto;
+	background: url(../img/contact/contact_select02.png) no-repeat;
+	  -webkit-appearance: none;
+	  height:42px;
+	  outline:0;
+	  border:0;
+	  padding-left: 10px;
+}
+.field_day {
+	 width:170px;
+	margin:0 auto;
+	background: url(../img/contact/contact_select02.png) no-repeat;
+	  -webkit-appearance: none;
+	  height:42px;
+	  outline:0;
+	  border:0;
+	  padding-left: 10px;
+}
+.field_hour {
+	 width:346px;
+	margin:0 auto;
+	background: url(../img/contact/contact_select03.png) no-repeat;
+	  -webkit-appearance: none;
+	  height:42px;
+	  outline:0;
+	  border:0;
+	  padding-left: 10px;
+}
+
+
+.btn_contact {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(180, 28, 28);
+  background: #d63636 url(../img/contact/arrow_white01.png) right center no-repeat;
+	background-position: right 10px center;
+  background-size: 6px 11px;
+  width: 590px;
+  height: 95px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0;
+  font-weight: bold;
+  font-size:20px;
+}
+.btn_send {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(107, 162, 21);
+  background: rgb(107, 162, 21) url(../img/contact/arrow_white01.png) right center no-repeat;
+	background-position: right 10px center;
+  background-size: 6px 11px;
+   width: 456px;
+  height: 95px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  float:left;
+  margin-left:12px;
+  margin-bottom:80px;
+  font-size:20px;
+}
+.btn_back {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cdcdcd;
+  background: #eaeaea url(../img/contact/icon_gray_back.png) right center no-repeat;
+	background-position: left 10px center;
+  background-size: 6px 11px;
+  width: 456px;
+  height: 95px;
+  color: #333333;
+  cursor: pointer;
+  margin-bottom:80px;
+  font-size:20px;
+  float:left;
+}
+
+
+/*============================
+ thanks.html
+============================*/
+.thanks h2 {
+	text-align: center;
+	margin: 10px 0;
+}
+.banner_link {
+	background: #fff url(../img/common/arrow_black_back.png) left center no-repeat;
+	background-position: left 10px center;
+	background-size: auto 11px;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+.error_field {
+	color: #c21010;
+}
+
+/*
+-----------------
+----------------------
+------------NNA----------
+-----------*/
+#bottom
+{
+margin-bottom:80px;
+margin-top:50px;
+}
+.field em img {
+  display: block;
+ 
+  
+}
+.field p {
+  margin: 0 0 5px;
+  position: relative !important;
+  margin-bottom: 15px;
+}
+.field em {
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  height: 30px;
+}
+.error_message{ 
+width: 657px;
+height:40px; 
+margin: 15px auto;
+line-height:40px; 
+text-align: left;
+font-size:12px; 
+color:#fff; 
+background:#CC0001 url(../img/contact/ico_wranning.png) no-repeat 10px center; padding-left:45px;
+}
+.btn_contact2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color:#cdcdcd;
+  background: #eaeaea url(../img/contact/arrow_white01.png) right center no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 10px;
+   height: 95px;
+  color: #000;
+  font-size:20px;
+  border-radius: 0;
+  font-weight: bold;
+
+  width:590px;
+  
+}
+#contact_err,#contact_err2 {
+  margin-top: 46px;
+}
+#main_visual h1
+{
+font-size:42px;
+}
+#main_visual
+{
+text-align:center;
+}
+.pt80
+{
+padding-top:80px;
+}
+#trc .field
+{
+text-align:center !important;
+}
+#trc 
+{
+text-align:center !important;
+}
